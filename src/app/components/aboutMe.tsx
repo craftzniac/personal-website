@@ -5,7 +5,7 @@ export const AboutMe = () => {
 
         "Then, I learnt Java/Android and built a basic quiz app which almost everyone in my class used to prepare for one of our class tests. Then I spent the next few months hopping from one technology to another.",
 
-        "Finally, In 2021, I ventured into the wonderful world of web development, learning the basics and eventually moving over to the MERN stack and Nextjs. I continuously look for avenues to learn new tech and improve my existing knowledge."
+        "Finally, in 2021 I started exploring the wonderful world of web development, learning the basics and eventually moving over to the MERN stack and recently to Nextjs. I continuously look for avenues to learn new tech and improve my existing knowledge."
     ]
     return (
         <section className="section-wrapper" id={navIds.aboutMe}>
