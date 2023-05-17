@@ -2,26 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+a,
+label,
+button,
+h1,
+h3,
+h4,
+h5 {
+    @apply font-bold;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h2 {
+    @apply font-semibold;
+}
+
+input {
+    color: inherit;
+
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply text-black font-normal;
+}
+
+.section-wrapper {
+    @apply px-4 sm:px-8 md:px-16 flex flex-col gap-4 md:gap-16 text-center items-center max-w-lg;
+}
+
+.section-title {
+    @apply text-h3 sm:text-h3-sm md:text-h3-md lg:text-h3-lg w-full;
+}
+
+
+.form-flex {
+    @apply flex flex-col gap-2 items-start
+}
+
+.form-input-wrapper {
+    @apply form-flex;
+}
+
+.form-input {
+    @apply bg-primary p-3  rounded-sm w-full text-base;
+}
+
+.form-label{
+    @apply text-base;
+}
+
+.form-select {
+    @apply form-flex p-3 rounded-sm w-full;
+}
+
+.submit-btn {
+    @apply w-full bg-accent text-primary rounded px-8 py-4 hover:bg-accent-light ;
+    @apply form-label;
+}
+
+
+.fill-origin {
+    @apply absolute bottom-0 left-0 right-0 top-0 transition duration-300 translate-y-[120%] bg-accent mix-blend-multiply;
+}
+
+.nav-link {
+    @apply relative text-xs sm:text-xs-sm md:text-xs-md lg:text-xs-lg overflow-hidden;
+}
+
+
+.nav-link:hover .half-fill {
+    transform: translateY(50%);
+}
+
+.half-fill {
+    @apply fill-origin;
+}
+
+
+.nav-link-mobile {
+    @apply relative text-h3 sm:text-h3-sm text-center text-black overflow-hidden p-2;
+}
+
+.nav-link-mobile:hover .fill {
+    transform: translateY(0%);
+}
+
+.fill {
+    @apply fill-origin;
 }
