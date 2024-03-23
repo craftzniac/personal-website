@@ -29,7 +29,7 @@ type Link = {
 
 export const ProjectCard: React.FC<{ project: ProjectType }> = ({ project }) => {
     return (
-        <div className={`shadow rounded-sm relative w-full flex p-4  gap-4 sm:gap-8 lg:odd:flex-row-reverse `} style={{ background: project.bgColor }}>
+        <div className={`shadow rounded-sm relative w-full flex p-4 lg:p-5  gap-4 sm:gap-8 lg:odd:flex-row-reverse `} style={{ background: project.bgColor }}>
             <div className="relative md:w-[350px] lg:w-full hidden md:block p-1">
                 <Image src={project.imageUrl} alt={project.imageAltText} fill={true} className="object-contain " />
             </div>
@@ -44,11 +44,11 @@ export const ProjectCard: React.FC<{ project: ProjectType }> = ({ project }) => 
                     ))}
                 </div>
 
-                <div className="flex gap-2 flex-wrap">
+                <div className="flex gap-3 flex-wrap items-center">
                     {
                         project.links.map(link => (
-                            <Link href={link.link} target="_blank" className="flex gap-2 items-center hover:underline text-xs sm:text-xs-sm md:text-xs-md lg:text-xs-lg font-normal">
-                                <Image src={link.imageUrl} alt={link.imageAltText} />
+                            <Link href={link.link} target="_blank" className="flex gap-1 items-center  hover:underline text-xs sm:text-xs-sm md:text-xs-md lg:text-xs-lg font-normal">
+                                <Image src={link.imageUrl} alt={link.imageAltText} className="w-5 h-5 mb-0.5 object-center" />
                                 <p>{link.text}</p>
                             </Link>
                         ))

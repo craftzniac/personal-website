@@ -17,6 +17,7 @@ import _Tailwindcss from "./tailwindcss.svg"
 import _TS from "./ts.svg"
 import _Heart from "./heart.svg"
 import _XMark from "./xmark.svg"
+import _Globe from "./globe.svg"
 
 export const Github = _Github
 export const LinkedIn = _Linkedin
@@ -37,3 +38,4 @@ export const Tailwindcss =  _Tailwindcss
 export const TS =  _TS
 export const Heart = _Heart
 export const XMark = _XMark
+export const Globe = _Globe

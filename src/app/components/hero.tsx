@@ -15,7 +15,7 @@ export const Hero = () => {
                     I craft digital experiences on the web
                 </h2>
             </div>
-            <Link href={"#" + navIds.projects} className="px-6 sm:px-8 py-4 rounded text-primary bg-accent text-base sm:text-base-sm md:text-base-md lg:text-base-lg ">See My Projects</Link>
+            <Link href={"#" + navIds.projects} className="px-6 sm:px-8 py-4 rounded text-primary bg-accent text-base transition-colors border-2 border-accent duration-200 hover:bg-primary hover:text-accent sm:text-base-sm md:text-base-md lg:text-base-lg ">See My Projects</Link>
         </section>
     )
 }
